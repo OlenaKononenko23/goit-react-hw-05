@@ -1,0 +1,31 @@
+.form {
+    margin-bottom: 24px;
+}
+
+.input {
+    font-size: 16px;
+    padding: 8px 14px;
+    margin-right: 16px;
+    width: 300px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.btnSearch {
+    color: black;
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnSearch:hover,
+.btnSearch:focus {
+    color: rgb(184, 92, 7);
+}
+
+;

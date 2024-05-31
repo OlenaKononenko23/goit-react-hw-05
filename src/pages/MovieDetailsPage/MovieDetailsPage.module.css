@@ -1,0 +1,76 @@
+.detailsPage {
+    margin-bottom: 24px;
+}
+
+.goBackLink {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+.goBackLink:hover,
+.goBackLink:focus {
+    color: rgb(184, 92, 7);
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.movieInfo {
+    display: flex;
+    padding: 24px;
+    border-bottom: 1px solid black;
+}
+
+.img {
+    margin-right: 38px;
+}
+
+.genreList {
+    list-style: inside;
+}
+
+.addInfo {
+    padding: 24px;
+}
+
+.addInfoTitle {
+    margin-top: 0;
+}
+
+.infoList {
+    display: flex;
+    align-items: center;
+}
+
+.infoItem {
+    font-size: 16px;
+    padding: 2px 16px;
+    background-color: rgb(246, 243, 239);
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.infoItem:first-of-type {
+    margin-right: 24px;
+}
+
+.infoLink {
+    color: black;
+}
+
+.infoItem:hover,
+.infoItem:focus {
+    border-color: rgb(184, 92, 7);
+}
+
+.infoItem:hover>.infoLink,
+.infoItem:focus>.infoLink {
+    color: #b85c07;
+}
