@@ -2,6 +2,7 @@ import {Link, useLocation} from 'react-router-dom'
 import {useState, useEffect } from 'react'
 import {fetchTrendMovies} from '../../movies-api'
 import Loader from '../../components/Loader/Loader'
+import MovieList from '../../components/MovieList/MovieList'
 import toast from 'react-hot-toast'
 import css from './HomePage.module.css'
 
@@ -42,17 +43,9 @@ export default function HomePage() {
     return (
         <main className='container'>
             <div className={css.homePage}>
-                <h1>Trending Today</h1>
-                <ul className={css.movieList}>
-                    {trendMovies.map(movie => (
-                        <li key={movie.id} >
-                            <Link to={`/movies/${movie.id}`} state={{ from: location }} className={css.item}>
-                                {movie.title}
-                            </Link>
-                        </li>
-                    ))}
-                    {loading && <Loader />}
-                </ul>
+                <h1>Trending Today</h1> 
+                <MovieList movies={trendMovies} location={location}/>
+                {loading && <Loader />}
             </div>
         </main>
 
